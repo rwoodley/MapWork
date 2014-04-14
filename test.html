@@ -135,7 +135,7 @@
         var communityArea = _caMap[caId];
         if (communityArea == undefined) communityArea = "Cook County";
 
-        var dataValue = Math.floor(percent);
+        var dataValue = Math.floor(e.feature.getProperty('census_variable'));
         if (inPercent) dataValue += "%";
         document.getElementById('data-label').textContent = communityArea + ", " + e.feature.getProperty('NAMELSAD');
         document.getElementById('data-value').textContent = dataValue;
