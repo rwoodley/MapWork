@@ -1,0 +1,66 @@
+&key=810d2d98ab19a56485baaba03e5098f218ad55af
+http://api.census.gov/data/2010/sf1?get=P0010001&for=state:*&key=810d2d98ab19a56485baaba03e5098f218ad55af
+
+****************
+
+
+Original article: http://googledevelopers.blogspot.com/2014/04/build-map-infographic-with-google-maps.html
+API Starting point: http://www.census.gov/developers/data/#dpn
+National Day of Census Hacking: http://www.census.gov/developers/NDoCH_Support_Slides.pdf
+
+Census track map:
+http://www2.census.gov/geo/maps/dc10map/tract/st17_il/c17031_cook/DC10CT_C17031_005.pdf
+http://www.chicagorealtor.com/displaycommon.cfm?an=1&subarticlenbr=979
+Census track lookup:
+http://www.usa.com/IL031390300.html
+
+
+3rd Party Info:
+Act For Children data on poverty:
+http://www.actforchildren.org/site/PageServer?pagename=MDP_FactsInfo
+
+State Codes:
+http://www.census.gov/geo/reference/ansi_statetables.html
+
+County:
+http://www.census.gov/geo/reference/codes/cou.html
+http://www.census.gov/geo/reference/codes/files/st17_il_cou.txt
+
+Illinois: 11
+Cook: 031
+
+How to get geographies:
+http://api.census.gov/data/2011/acs5/geo.html
+
+BY Census tract
+http://api.census.gov/data/2011/acs5?get=B00001_001E&for=tract:*&in=state:17+county:031&key=810d2d98ab19a56485baaba03e5098f218ad55af
+
+http://api.census.gov/data/2012/acs5/profile?get=DP03_0062E&key=ea28d9e1f3ba55610a2bd31992dbc2e999b432bb&for=tract:*&in=state:17+county:031
+
+DP03_0119E
+
+Poverty by Census Tract:
+http://api.census.gov/data/2012/acs5/profile?get=DP03_0119PE&key=ea28d9e1f3ba55610a2bd31992dbc2e999b432bb&for=tract:*&in=state:17+county:031
+
+DP03_0120PE: % of families in poverty w children under 18
+http://api.census.gov/data/2012/acs5/profile?get=DP03_0120PE&key=ea28d9e1f3ba55610a2bd31992dbc2e999b432bb&for=tract:*&in=state:17+county:031
+
+Population, SF1:
+http://api.census.gov/data/2010/sf1?key=810d2d98ab19a56485baaba03e5098f218ad55af&get=P0010001&for=tract:*&in=state:17+county:031
+
+Population, acs:
+http://api.census.gov/data/2010/acs5?key=810d2d98ab19a56485baaba03e5098f218ad55af&get=B02001_001E,NAME&for=tract:*&in=state:17+county:031
+
+CHILDREN, ACS:
+http://api.census.gov/data/2011/acs5?get=B05009_001E,NAME&for=tract:*&in=state:17+county:031&key=810d2d98ab19a56485baaba03e5098f218ad55af
+
+
+Illinois Census tract polygons (TIGER):
+http://www2.census.gov/geo/tiger/TIGER2013/TRACT/
+http://www.census.gov/geo/maps-data/data/tiger.html
+
+
+Articles:
+Convert to GeoJSON:
+http://ccarpenterg.github.io/blog/us-census-visualization-with-d3js/
+
